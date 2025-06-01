@@ -1,8 +1,8 @@
 # Input
-Profile image and user info are rendered through JSX and styled using React Native StyleSheet.
+Users can input country name and currency in the AddCountry tab. The fields are simple text inputs that accept strings like USA and Dollar.
 
 # Process
-The component uses TouchableHighlight and `useState` with immutability-helper to toggle the card view. On tap, it switches between collapsed and expanded states.
+The data entered is validated to ensure it's not empty. Upon pressing the Add Country button, the inputs are converted into a structured object  and stored in the app's state using React's useState hook. This state is shared with the Countries screen via navigation props.
 
 # Output
-User sees a profile card that expands and collapses on tap, styled to match the assignment example.
+The Countries tab displays the list of all saved countries and their respective currencies in a scrollable view. If no countries have been added, a friendly message is shown instead. The app uses React Navigation's BottomTabNavigator to move between screens.
